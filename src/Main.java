@@ -11,5 +11,5 @@ public class Main {
         System.out.println("Книга 1 - " + bookOne.getName() + ", " + authorOne.getName()+ " " + authorOne.getSurname() + ", " + bookOne.setYearOfRelease() );
         System.out.println("Книга 2 - " + bookTwo.getName() + ", " + authorTwo.getName()+ " " + authorTwo.getSurname() + ", " + bookTwo.setYearOfRelease() );
     }
-
+    //
 }
