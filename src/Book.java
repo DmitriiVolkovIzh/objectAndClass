@@ -18,11 +18,16 @@ public class Book {
         return yearOfRelease;
     }
 
+    public void setYearOfRelease(int yearOfRelease) {
+        this.yearOfRelease = yearOfRelease;
+    }
     public int setYearOfRelease() {
         this.yearOfRelease = yearOfRelease;
         return yearOfRelease;
     }
-    //
+    public String toString(){
+        return "Название произведения: " + getName() + ", Автор: " + getAuthor() + ", Год издания: " + setYearOfRelease();
+    }
 }
 
 
