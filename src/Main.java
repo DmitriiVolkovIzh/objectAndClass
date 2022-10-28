@@ -11,7 +11,7 @@ public class Main {
         System.out.println(bookOne );
         System.out.println(bookTwo);
 
-        bookOne.setYearOfRelease(2022);
+        bookOne.setYearOfRelease(2021);
         System.out.println(bookOne);
     }
 }

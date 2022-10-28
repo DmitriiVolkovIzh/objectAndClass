@@ -28,7 +28,21 @@ public class Book {
     public String toString(){
         return "Название произведения: " + getName() + ", Автор: " + getAuthor() + ", Год издания: " + setYearOfRelease();
     }
+    public boolean equals(Object other){
+        if(this == other) {
+            return true;
+        }
+        if(other==null || this.getClass() != other.getClass()){
+            return false;
+        }
+        Book bookOne = (Book) other;
+        return name.equals(bookOne.name) && author.equals(bookOne.author) && yearOfRelease==bookOne.yearOfRelease;
+    }
+    public int hashCode(){
+        return java.util.Objects.hash(name, yearOfRelease, author);
 }
+}
+
 
 
 
