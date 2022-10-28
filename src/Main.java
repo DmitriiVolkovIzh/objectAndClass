@@ -6,9 +6,12 @@ public class Main {
         Book bookOne = new Book("1984", authorOne, 1949);
 
         Author authorTwo = new Author("Николай","Носов");
-        Book bookTwo = new Book("Незнайка на луне", authorOne, 1965);
+        Book bookTwo = new Book("Незнайка на луне", authorTwo, 1965);
 
-        System.out.println("Книга 1 - " + bookOne.getName() + ", " + authorOne.getName()+ " " + authorOne.getSurname() + ", " + bookOne.setYearOfRelease() );
-        System.out.println("Книга 2 - " + bookTwo.getName() + ", " + authorTwo.getName()+ " " + authorTwo.getSurname() + ", " + bookTwo.setYearOfRelease() );
+        System.out.println(bookOne );
+        System.out.println(bookTwo);
+
+        bookOne.setYearOfRelease(2021);
+        System.out.println(bookOne);
     }
 }
